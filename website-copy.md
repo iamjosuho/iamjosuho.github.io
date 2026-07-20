@@ -115,7 +115,7 @@
 - **標題**: LET'S CONNECT
 - **描述**:如果你正在尋找能夠帶團隊、建立交付機制、推動架構演進、導入 AI 協作開發的技術主管，歡迎與我聯絡。
 - **管道**:
-  - **Email**: j5201314peter@gmail.com
+  - **Email**: josuho.tw@gmail.com
   - **GitHub**: github.com/iamjosuho
   - **LinkedIn**: linkedin.com/in/shou-hao-zhao
 
