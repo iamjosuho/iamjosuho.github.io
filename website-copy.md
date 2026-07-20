@@ -1,4 +1,4 @@
-# JuSuHo 個人網站文案提取
+# Josuho 個人網站文案提取
 
 此文件提取自 `index.html`，按照網站結構與主題進行分類整理。
 
@@ -6,15 +6,15 @@
 
 ## 1. 網站元數據 (Metadata / SEO)
 
-- **網頁標題**: JuSuHo | Engineering Leader
-- **網頁描述**: JuSuHo的個人網站。聚焦工程團隊建立、企業AI導入、架構現代化、交付流程標準化與營運導向的技術管理。
+- **網頁標題**: Josuho | Engineering Manager
+- **網頁描述**: Josuho的個人網站。聚焦工程團隊建立、企業AI導入、架構現代化、交付流程標準化與營運導向的技術管理。
 - **主題顏色**: #1d281f
 
 ---
 
 ## 2. 導覽列 (Navigation)
 
-- **Logo**: JuSuHo
+- **Logo**: Josuho
 - **選單項目**:
   - 關於 (About)
   - 代表成果 (Achievements)
@@ -42,7 +42,7 @@
 
 ## 4. 核心能力簡述 (Capabilities)
 
-- **Engineering Leadership**: 從零建立跨職能研發團隊，導入 Scrum 與穩定交付節奏。
+- **Engineering Managership**: 從零建立跨職能研發團隊，導入 Scrum 與穩定交付節奏。
 - **AI-Enabled Delivery**: 將 AI 納入程式生成、重構、測試與知識轉譯流程。
 - **Cloud Architecture**: 主導 GCP 雲端架構建置，兼顧成本、可用性與擴張性。
 - **Governance & Ops**: ISO 27001、個資保護、M365 導入與 IT 基礎建設治理。
@@ -97,7 +97,7 @@
 
 - **標題**: 我能負責的範圍 (What I Lead)
 - **細項**:
-  - **Engineering Leadership**: 團隊建立、角色分工、Scrum、跨職能協作、Code Review 與交付流程設計。
+  - **Engineering Managership**: 團隊建立、角色分工、Scrum、跨職能協作、Code Review 與交付流程設計。
   - **Architecture & Platform**: GCP、GKE、Cloud Run、Cloud SQL、架構演進、微服務化、CI/CD 與 Monorepo 管理。
   - **AI-Enabled Delivery**: AI 協作開發流程設計、程式生成與重構應用、測試撰寫輔助、知識轉譯與團隊產能槓桿。
   - **Business Alignment**: 需求釐清、優先序協調、跨部門溝通、供應商協作、交付節奏與風險管理。
@@ -116,13 +116,13 @@
 - **描述**:如果你正在尋找能夠帶團隊、建立交付機制、推動架構演進、導入 AI 協作開發的技術主管，歡迎與我聯絡。
 - **管道**:
   - **Email**: j5201314peter@gmail.com
-  - **GitHub**: github.com/jusuho
+  - **GitHub**: github.com/iamjosuho
   - **LinkedIn**: linkedin.com/in/shou-hao-zhao
 
 ---
 
 ## 10. 頁尾 (Footer)
 
-- **Logo**: ● JuSuHo
-- **標語**: © 2026 — Engineering Leader focused on AI-enabled delivery & architecture
-- **網址**: jusuho.github.io
+- **Logo**: ● Josuho
+- **標語**: © 2026 — Engineering Manager focused on AI-enabled delivery & architecture
+- **網址**: iamjosuho.github.io

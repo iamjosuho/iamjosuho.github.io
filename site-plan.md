@@ -4,10 +4,10 @@ Last updated: 2026-04-04
 
 ## Positioning
 
-This site should present Zhao Shou Hao as an engineering leader rather than a generic software portfolio candidate.
+This site should present Zhao Shou Hao as an Engineering Manager rather than a generic software portfolio candidate.
 
 Core positioning:
-- Senior Engineering Leader with Head/Director potential
+- Senior Engineering Manager with Head/Director potential
 - 7+ years of software, system integration, and delivery experience
 - Strong in team building, architecture, delivery systems, governance, and business-facing execution
 - Able to translate ambiguity into operating cadence, technical direction, and measurable business outcomes
@@ -136,7 +136,7 @@ Name:
 
 Title:
 
-`Engineering Leader | Technical Lead / Engineering Manager`
+`Engineering Manager | Technical Lead / Engineering Manager`
 
 Subtitle:
 
@@ -237,7 +237,7 @@ Section title:
 
 Categories:
 
-- `Engineering Leadership`
+- `Engineering Managership`
   `團隊建立、角色分工、Scrum、跨職能協作、Code Review、交付流程設計`
 
 - `Architecture & Platform`

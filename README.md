@@ -1,4 +1,4 @@
-# jusuho.github.io
+# iamjosuho.github.io
 
 GitHub Pages site for a management-oriented personal portfolio.
 
@@ -23,7 +23,7 @@ Then open `http://localhost:8000`.
 
 ## GitHub Pages Deployment
 
-For a user site repository named `jusuho.github.io`:
+For a user site repository named `iamjosuho.github.io`:
 
 1. Push the default branch to GitHub.
 2. In GitHub, open `Settings` > `Pages`.
@@ -33,7 +33,7 @@ For a user site repository named `jusuho.github.io`:
 
 Expected production URL:
 
-`https://jusuho.github.io/`
+`https://iamjosuho.github.io/`
 
 ## Before Publishing
 
