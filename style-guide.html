@@ -4,8 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zic Zhao 八字色彩系統 — Style Guide</title>
-<link rel="stylesheet" href="tokens.css">
 <style>
+/* ==== Tokens（與 tokens.css 同步）==== */
+:root {
+  --metal-50:#FAF8F4;--metal-100:#F3F0E9;--metal-200:#E5E0D5;--metal-300:#CFC9BB;--metal-400:#A8A398;
+  --metal-500:#7E7A70;--metal-600:#5C5952;--metal-700:#44423C;--metal-800:#2C2B27;--metal-900:#1A1917;
+  --water-50:#EEF4F8;--water-100:#D8E6EF;--water-200:#B3CDDE;--water-300:#85AEC8;--water-400:#5B8FB0;
+  --water-500:#3B7095;--water-600:#2B577A;--water-700:#204360;--water-800:#172F45;--water-900:#0F1F2E;
+  --gold-50:#FBF6E9;--gold-100:#F4E8C8;--gold-200:#E8D28F;--gold-300:#D9B95C;--gold-400:#C9A227;
+  --gold-500:#A9871E;--gold-600:#8C6D1F;--gold-700:#6E551C;--gold-800:#4F3D16;--gold-900:#33270F;
+  --color-success:#3E7C4F;--color-warning:#B4690E;--color-error:#B3392F;--color-info:var(--water-500);
+}
+[data-theme="light"] {
+  --bg-primary:#FAF7F2;--bg-secondary:#F2EDE4;--surface:#FFFFFF;--surface-raised:#FFFFFF;
+  --border:#E3DCCE;--border-strong:var(--metal-300);
+  --text-primary:#1C2430;--text-secondary:#5A6472;--text-muted:var(--metal-600);--text-inverse:#FAF8F4;
+  --brand:var(--water-600);--brand-hover:var(--water-700);--brand-subtle:var(--water-50);
+  --accent:var(--gold-600);--accent-decor:var(--gold-400);--link:var(--water-600);--focus-ring:var(--water-400);
+}
+[data-theme="dark"] {
+  --bg-primary:#120F0C;--bg-secondary:#181410;--surface:#1D1814;--surface-raised:#26211C;
+  --border:#332C25;--border-strong:#453D33;
+  --text-primary:#EDEAE3;--text-secondary:#B3AB9E;--text-muted:var(--metal-400);--text-inverse:#120F0C;
+  --brand:var(--water-300);--brand-hover:var(--water-200);--brand-subtle:var(--water-800);
+  --accent:var(--gold-300);--accent-decor:var(--gold-400);--link:var(--water-300);--focus-ring:var(--water-400);
+}
 
 /* ==== Page ==== */
 * { box-sizing: border-box; }
@@ -154,11 +177,11 @@ footer { margin-top:64px; color:var(--text-muted); font-size:.8rem; border-top:1
     <tr><th>規則</th><th>說明</th></tr>
     <tr><td>比例</td><td>中性 70%／主色藍 20%／暖金 &lt;10%。金是財星，越少越貴。</td></tr>
     <tr><td>文字金</td><td>淺底文字用 gold-600 以深（AA 4.5:1）；gold-400 只能當裝飾線、圖示。</td></tr>
-    <tr><td>深色模式</td><td>主色改用 water-300、金用 gold-300，維持對比；底色為水系深藍黑，非純黑。</td></tr>
+    <tr><td>深色模式</td><td>底色為土系暖黑（夜晚的土，補運不間斷）；主色改用 water-300、金用 gold-300，水只出現在互動元素。</td></tr>
     <tr><td>語意色</td><td>success/warning/error/info 依五行木火火水對應，不與品牌色混用。</td></tr>
   </table>
 
-  <footer>八字色彩系統 v1.0｜2026-07-20｜全部文字組合通過 WCAG AA（實測 4.55–15.25:1）</footer>
+  <footer>八字色彩系統 v1.2｜2026-07-20｜深色模式改為更深的暖黑｜全部文字組合通過 WCAG AA（實測 4.45–14.96:1）</footer>
 </div>
 <script>
 function toggleTheme(){

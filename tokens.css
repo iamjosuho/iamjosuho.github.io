@@ -1,24 +1,19 @@
 /* ============================================================
    Zic Zhao 個人網站設計系統 — 八字色彩 Tokens
+   命理依據：乾造 壬申 癸卯 辛巳 甲午（辛金日主，食傷生財格）
+   策略：B（本命）為主、A（補運）為輔，light/dark 雙模式
+   ------------------------------------------------------------
+   五行對應：
+   金（辛，日主）  → metal  中性色階（鉑銀、暖灰）
+   水（壬癸，食傷）→ water  主色（深邃藍，才華與表達）
+   木火（甲/財官） → gold   點綴色（暖金，財星）
+   土（印，喜神）  → 淺色模式底色（暖米白，補運）
    ============================================================ */
 
 :root {
-  /* ---- Primitive: base ---- */
-  --base-white: #FFFFFF;
-
-  /* ---- Primitive: earth (淺色土金補運底色) ---- */
-  --earth-50:  #FAF7F2;
-  --earth-100: #F2EDE4;
-  --earth-200: #E3DCCE;
-
-  /* ---- Primitive: ink (淺色水墨文字色) ---- */
-  --ink-800: #5A6472;
-  --ink-900: #1C2430;
-
   /* ---- Primitive: metal 辛金中性階 ---- */
   --metal-50:  #FAF8F4;
   --metal-100: #F3F0E9;
-  --metal-150: #EDEAE3; /* 月白 (深色文字主色) */
   --metal-200: #E5E0D5;
   --metal-300: #CFC9BB;
   --metal-400: #A8A398;
@@ -32,21 +27,13 @@
   --water-50:  #EEF4F8;
   --water-100: #D8E6EF;
   --water-200: #B3CDDE;
-  --water-250: #A8B0BC; /* 深色文字次要色 */
   --water-300: #85AEC8;
   --water-400: #5B8FB0;
-  --water-450: #7C8694; /* 深色文字靜音色 */
   --water-500: #3B7095;
   --water-600: #2B577A;
   --water-700: #204360;
-  --water-750: #3A4656; /* 深色邊框重色 */
   --water-800: #172F45;
-  --water-825: #2A3442; /* 深色邊框 */
-  --water-850: #222B37; /* 深色浮動表面 */
-  --water-875: #1A212B; /* 深色表面 */
   --water-900: #0F1F2E;
-  --water-925: #151C25; /* 深色次要底色 */
-  --water-950: #10151C; /* 深色主底色 */
 
   /* ---- Primitive: gold 甲木財星點綴階 ---- */
   --gold-50:  #FBF6E9;
@@ -61,48 +48,49 @@
   --gold-900: #33270F;
 
   /* ---- Semantic: 五行語意色 ---- */
-  --color-success: #3E7C4F;
-  --color-warning: #B4690E;
-  --color-error:   #B3392F;
-  --color-info:    var(--water-500);
+  --color-success: #3E7C4F;  /* 木 */
+  --color-warning: #B4690E;  /* 火（暖橙） */
+  --color-error:   #B3392F;  /* 火（赤） */
+  --color-info:    var(--water-500); /* 水 */
 }
 
 /* ---- Light mode（預設）：土金補運底 ---- */
+:root,
 [data-theme="light"] {
-  --bg-primary:    var(--earth-50);
-  --bg-secondary:  var(--earth-100);
-  --surface:       var(--base-white);
-  --surface-raised:var(--base-white);
-  --border:        var(--earth-200);
+  --bg-primary:    #FAF7F2;          /* 暖米白（土，喜神） */
+  --bg-secondary:  #F2EDE4;
+  --surface:       #FFFFFF;
+  --surface-raised:#FFFFFF;
+  --border:        #E3DCCE;
   --border-strong: var(--metal-300);
 
-  --text-primary:  var(--ink-900);
-  --text-secondary:var(--ink-800);
-  --text-muted:    var(--metal-500);
-  --text-inverse:  var(--metal-50);
+  --text-primary:  #1C2430;          /* 藍黑（水墨） */
+  --text-secondary:#5A6472;
+  --text-muted:    var(--metal-600);
+  --text-inverse:  #FAF8F4;
 
-  --brand:         var(--water-600);
+  --brand:         var(--water-600); /* 主色：深邃藍 */
   --brand-hover:   var(--water-700);
   --brand-subtle:  var(--water-50);
-  --accent:        var(--gold-600);
-  --accent-decor:  var(--gold-400);
+  --accent:        var(--gold-600);  /* 點綴：暖金（文字級） */
+  --accent-decor:  var(--gold-400);  /* 點綴：暖金（裝飾級，勿當文字） */
   --link:          var(--water-600);
   --focus-ring:    var(--water-400);
 }
 
-/* ---- Dark mode：食傷水的深邃 ---- */
+/* ---- Dark mode（v1.2）：更深的暖黑底 ---- */
 [data-theme="dark"] {
-  --bg-primary:    var(--water-950);
-  --bg-secondary:  var(--water-925);
-  --surface:       var(--water-875);
-  --surface-raised:var(--water-850);
-  --border:        var(--water-825);
-  --border-strong: var(--water-750);
+  --bg-primary:    #120F0C;          /* 更深的暖黑底（土，喜神） */
+  --bg-secondary:  #181410;
+  --surface:       #1D1814;          /* 卡片 */
+  --surface-raised:#26211C;          /* 原 surface 值下移遞補 */
+  --border:        #332C25;
+  --border-strong: #453D33;
 
-  --text-primary:  var(--metal-150);
-  --text-secondary:var(--water-250);
-  --text-muted:    var(--water-450);
-  --text-inverse:  var(--water-950);
+  --text-primary:  #EDEAE3;          /* 月白（辛金） */
+  --text-secondary:#B3AB9E;
+  --text-muted:    var(--metal-400);          /* 調亮，維持對比度 */
+  --text-inverse:  #120F0C;          /* 跟隨新底色 */
 
   --brand:         var(--water-300);
   --brand-hover:   var(--water-200);
@@ -116,18 +104,16 @@
 /* 跟隨系統偏好（未手動指定 data-theme 時） */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --bg-primary:    var(--water-950);
-    --bg-secondary:  var(--water-925);
-    --surface:       var(--water-875);
-    --surface-raised:var(--water-850);
-    --border:        var(--water-825);
-    --border-strong: var(--water-750);
-
-    --text-primary:  var(--metal-150);
-    --text-secondary:var(--water-250);
-    --text-muted:    var(--water-450);
-    --text-inverse:  var(--water-950);
-
+    --bg-primary:    #120F0C;
+    --bg-secondary:  #181410;
+    --surface:       #1D1814;
+    --surface-raised:#26211C;
+    --border:        #332C25;
+    --border-strong: #453D33;
+    --text-primary:  #EDEAE3;
+    --text-secondary:#B3AB9E;
+    --text-muted:    var(--metal-400);
+    --text-inverse:  #120F0C;
     --brand:         var(--water-300);
     --brand-hover:   var(--water-200);
     --brand-subtle:  var(--water-800);
